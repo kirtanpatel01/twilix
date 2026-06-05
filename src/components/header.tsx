@@ -1,8 +1,10 @@
 import { Link } from "react-router"
+import { GithubLogo } from "./github-logo"
+import { ModeToggle } from "./mode-toggle"
 
 function Header() {
   return (
-    <header className="sticky top-0 w-full flex justify-between items-center border-b bg-secondary px-4 py-2">
+    <header className="text-foreground-secondary sticky top-0 flex w-full items-center justify-between border-b bg-secondary px-4 py-2">
       <Link to="/">
         <h1 className="flex items-center">
           <img
@@ -10,15 +12,21 @@ function Header() {
             alt="Logo"
             className="mr-2 inline-block h-8 w-8"
           />
-          <span className="font-grand-hotel text-2xl font-bold">Twilix</span>
+          <span className="text-3xl font-extrabold">Twilix</span>
         </h1>
       </Link>
 
-      <Link to="https://github.com/kirtanpatel01/twilix" target="_blank" rel="noopener noreferrer">
-        <button>
-          <img src="/GitHub_Lockup_Black.svg" alt="GitHub" className="inline-block w-24" />
-        </button>
-      </Link>
+      <div className="flex items-center gap-4">
+        <Link
+          to="https://github.com/kirtanpatel01/twilix"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-foreground-secondary hover:text-foreground transition-colors"
+        >
+          <GithubLogo className="h-6 w-auto" />
+        </Link>
+        <ModeToggle />
+      </div>
     </header>
   )
 }
