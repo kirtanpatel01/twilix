@@ -6,7 +6,9 @@ function RootLayout() {
   return (
     <div>
       <Header />
-      <Outlet />
+      <main className=''>
+        <Outlet />
+      </main>
       <Footer />
     </div>
   )

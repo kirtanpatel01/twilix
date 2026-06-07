@@ -4,7 +4,7 @@ import { ModeToggle } from "./mode-toggle"
 
 function Header() {
   return (
-    <header className="text-foreground-secondary sticky top-0 flex w-full items-center justify-between border-b bg-secondary px-4 py-2">
+    <header className="sticky top-0 flex h-(--header-height) w-full items-center justify-between border-b bg-secondary/75 px-3 py-2 text-accent-foreground">
       <Link to="/">
         <h1 className="flex items-center">
           <img
@@ -21,7 +21,7 @@ function Header() {
           to="https://github.com/kirtanpatel01/twilix"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-foreground-secondary hover:text-foreground transition-colors"
+          className="text-foreground-secondary transition-colors hover:text-foreground"
         >
           <GithubLogo className="h-6 w-auto" />
         </Link>

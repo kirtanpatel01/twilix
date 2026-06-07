@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="sticky bottom-0 w-full text-center py-1 px-4 bg-accent text-foreground-secondary text-sm">
+    <footer className="sticky bottom-0 w-full text-center py-1 px-4 bg-accent/70 text-accent-foreground text-sm h-(--footer-height)">
       <p>
         Made with ❤️ by{" "}
         <a
